@@ -7,7 +7,7 @@
 ### Veiktās pārbaudes (Passed Tests)
 *Šīs funkcijas darbojas stabili un atbilst pamatstandartiem.*
 
-* ✅ **XSS Drošības tests:** Ievadot `<script>alert('QA')</script>`, kods netiek izpildīts.
+* ✅ **XSS & HTML Injection drošība:** Ievadot vaicājumus ar skriptiem `<script>alert('QA')</script>` vai HTML tagiem `<h1>Test</h1>`, sistēma tos neizpilda. Tagi tiek ignorēti vai izfiltrēti, un meklēšana tiek veikta tikai pēc burtiskās teksta vērtības. Tas apliecina, ka ievades lauks ir drošs pret koda injekcijām.
 * ✅ **Pārlūka 'Back' pogas tests:** Pēc atgriešanās no rezultātu lapas, meklēšanas frāze saglabājas meklēšanas laukā.
 * ✅ **Diakritiskās zīmes:** Sistēma korekti apstrādā un atrod vārdus ar latviešu valodas raksturīgajām zīmēm (ā, č, ē, ģ u.c.).
 * ✅ **SQL Injection (Basic):** Ievade `' OR 1=1 --` netiek izpildīta kā datubāzes komanda.
@@ -26,3 +26,6 @@
 * **Frāžu meklēšana un satura indeksācija (Exact Match):**
     * ⚠️ **Novērojums:** Sistēma atbalsta meklēšanu ar pēdiņām (piem. `"lauksaimniecības politika"`). Novērots, ka meklētājs indeksē arī raksta beigās esošo **tehnisko informācijas bloku** (atsauces uz līgumiem un finansējumu slīprakstā), kas atrodas virs galvenās lapas kājenes (*footer*). Tas būtiski ietekmē rezultātu skaitu vaicājumiem bez pēdiņām.
     * 💡 **Ieteikums:** Pievienot paskaidrojošu informāciju (piem. "tooltip") par pēdiņu izmantošanu precīzākai meklēšanai un izvērtēt iespēju samazināt prioritāti tehniskajiem informācijas blokiem meklēšanas rezultātos.
+* **Testa dati produkcijas vidē:**
+    * ⚠️ **Novērojums:** Meklējot specifiskus atslēgvārdus (piem. "test"), rezultātos parādās izstrādes procesa testa dati ("test1", "test2" utt.).
+    * 💡 **Ieteikums:** Veikt datubāzes tīrīšanu produkcijas vidē, lai lietotājiem netiktu rādīti sistēmas testēšanas raksti.
