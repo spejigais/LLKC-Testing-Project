@@ -29,3 +29,6 @@
 * **Testa dati produkcijas vidē:**
     * ⚠️ **Novērojums:** Meklējot specifiskus atslēgvārdus (piem. "test"), rezultātos parādās izstrādes procesa testa dati ("test1", "test2" utt.).
     * 💡 **Ieteikums:** Veikt datubāzes tīrīšanu produkcijas vidē, lai lietotājiem netiktu rādīti sistēmas testēšanas raksti.
+* **Maksimālā vaicājuma garuma validācija (Stress Test):**
+    * ⚠️ **Novērojums:** Sistēma ļauj meklēšanas laukā ievadīt un apstrādāt pārmērīgi lielu datu apjomu (testēts ar 25 000 vārdiem). Programma neuzkārās, kas ir pozitīvi, taču meklēšanas laukam nav noteikts rakstzīmju ierobežojums (*maxlength*).
+    * 💡 **Ieteikums:** Ieviest saprātīgu rakstzīmju ierobežojumu meklēšanas laukam (piemēram, 200–500 simboli), lai novērstu lieku servera noslodzi un potenciālus pakalpojuma atteices (*DoS*) riskus nākotnē.
