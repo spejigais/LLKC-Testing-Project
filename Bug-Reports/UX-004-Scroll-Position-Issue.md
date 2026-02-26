@@ -1,8 +1,13 @@
-# UX Kļūdas ziņojums: UX-005
+# UX Kļūdas ziņojums: UX-004
 
 **Nosaukums:** Lapas ritināšanas pozīcija netiek atiestatīta pie jauna meklējuma
 **Tips:** UX / Functional Defect
 **Prioritāte:** Vidēja (Medium)
+
+## 💻 Vide (Environment)
+* **OS:** Windows 11
+* **Pārlūks:** Mozilla Firefox 147.0.4 (64-bit)
+* **Ierīce:** Desktop
 
 ## 🎯 Apraksts
 Veicot jaunu meklēšanu laikā, kad lietotājs ir patinis iepriekšējos rezultātus uz leju, lapas ritināšanas (*scroll*) pozīcija netiek atiestatīta uz sākumu. Lietotājs paliek lapas vidū vai apakšā, neredzot jaunā vaicājuma pirmos rezultātus.
