@@ -23,3 +23,6 @@
 * **Rezultātu kārtošanas loģika:**
     * ⚠️ **Novērojums:** Meklēšanas rezultātu kārtošanas princips nav pašsaprotams. Nav novērojama konsekventa secība ne pēc relevances (vārda pozīcijas virsrakstā), ne pēc stingras hronoloģijas (piemēram, novembra datumi rezultātos parādās sajauktā secībā).
     * 💡 **Ieteikums:** Definēt un ieviest skaidru rezultātu prioritizēšanu (piemēram, aktuālākie raksti ar precīzāko atbilstību saraksta sākumā) vai pievienot kārtošanas filtru lietotājam.
+* **Frāžu meklēšana un satura indeksācija (Exact Match):**
+    * ⚠️ **Novērojums:** Sistēma atbalsta meklēšanu ar pēdiņām (piem. `"lauksaimniecības politika"`). Novērots, ka meklētājs indeksē arī raksta beigās esošo **tehnisko informācijas bloku** (atsauces uz līgumiem un finansējumu slīprakstā), kas atrodas virs galvenās lapas kājenes (*footer*). Tas būtiski ietekmē rezultātu skaitu vaicājumiem bez pēdiņām.
+    * 💡 **Ieteikums:** Pievienot paskaidrojošu informāciju (piem. "tooltip") par pēdiņu izmantošanu precīzākai meklēšanai un izvērtēt iespēju samazināt prioritāti tehniskajiem informācijas blokiem meklēšanas rezultātos.
