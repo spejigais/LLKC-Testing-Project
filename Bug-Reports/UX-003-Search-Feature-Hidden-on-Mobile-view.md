@@ -28,7 +28,7 @@ Meklēšanas funkcijai ir jābūt pieejamai visos ekrāna izmēros. Standarta ri
 
 ## 📸 Pierādījumi
 ![Meklētāja pazušanas tests darbvirsmas pārlūkā](../images/UX-003-desktop-responsive.png)
-![Meklētāja pazušanas tests darbvirsmas pārlūkā pie atvērta menu](UX-003-desktop-responsive-open-hamburger.png)
+![Meklētāja pazušanas tests darbvirsmas pārlūkā pie atvērta menu](../images/UX-003-desktop-responsive-open-hamburger.png)
 ![Meklētāja pazušanas tests uz Pixel 6](../images/UX-003-mobile-real-device.png)
 ![Meklētāja pazušanas tests uz Pixel 6 pie atvērta menu](../images/UX-003-mobile-real-device-open-hamburger.png)
 
