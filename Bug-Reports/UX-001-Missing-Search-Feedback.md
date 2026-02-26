@@ -21,7 +21,7 @@ Ja meklētājā tiek ievadīts vaicājums, kuram sistēma nevar atrast nevienu a
 Meklēšanas/rezultātu logs neatveras. Netiek izvadiīts nekāds teksts.
 
 ## ✅ Gaidāmais rezultāts
-Sistēmai būtu jāizvada informatīvs ziņojums, piemēram: *"Diemžēl nekas netika atrasts. Mēģiniet izmantot citus atslēgvārdus."*
+Sistēmai būtu jāizvada informatīvs ziņojums, piemēram: *"Diemžēl nekas netika atrasts. Mēģiniet izmantot citus atslēgvārdus."* Pretējā gadījumā lietotājs var domāt, ka sistēma nestrādā. 
 
 ## 📸 Pierādījums
 ![Meklētājs bez rezultātiem](../images/UX-001-Missing-Search-Feedback.png)
