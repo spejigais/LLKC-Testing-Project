@@ -12,5 +12,5 @@ Veikt funkcionālo un lietojamības (UX/UI) testēšanu, lai identificētu nepil
 * **Testēšanas veidi:** Manuālā testēšana, Responsivitātes pārbaude, Formu validācija.
 
 ## 📂 Dokumentācija
-* 📝 **[Bug Reports](./Bug-Reports.md)** - Atrasto kļūdu detalizēti apraksti.
+* 📝 **[Bug Reports](./Bug-Reports)** - Atrasto kļūdu detalizēti apraksti.
 * 📊 **Test Cases** - (Tiks papildināts)
