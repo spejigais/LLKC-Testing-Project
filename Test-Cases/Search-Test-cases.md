@@ -43,6 +43,17 @@
 
 ---
 
+## TC-04: Nefunkcionālie testi (Performance & Accessibility)
+**Mērķis:** Izvērtēt lapas tehnisko gatavību un pieejamību, izmantojot automatizētos rīkus.
+
+| Scenārijs | Pārbaudes darbība | Sagaidāmais rezultāts | Statuss |
+| :--- | :--- | :--- | :--- |
+| **Veiktspēja** | PageSpeed Insights analīze | Performance rādītājs virs 80 un LCP zem 2.5s | ❌ Failed |
+| **Pieejamība** | PageSpeed analīze | Accessibility rādītājs virs 90 | ⚠️ Observation |
+| **Stabilitāte** | CLS mērījums ielādes laikā | CLS rādītājs zem 0.1 (nav satura nobīdes) | ✅ Passed |
+
+---
+
 ### 💡 Piezīmes:
 * **✅ Passed:** Funkcija strādā atbilstoši standartiem.
 * **❌ Failed:** Konstatēta kļūda (detalizētu aprakstu skatīt mapē `Bug-Reports/`).
